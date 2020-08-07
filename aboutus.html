@@ -27,7 +27,7 @@
   <body>
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
-        <div class="row">
+        <div class="row row-content">
           <div class="col-4 col-sm-3 col-md-2 align-self-center">
             <a href="index.html"
               ><img src="img/logo.png" class="img-fluid"
@@ -36,6 +36,18 @@
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col custom-control custom-switch mt-2 text-right">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="darkSwitch"
+            />
+            <label class="custom-control-label" for="darkSwitch"
+              >Dark Mode</label
+            >
           </div>
         </div>
       </div>
@@ -86,9 +98,9 @@
       <div class="row">
         <div class="col">
           <!-- Breadcrumb goes here-->
-          <ol class="breadcrumb">
+          <ol class="breadcrumb card-block">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">About</li>
+            <li class="breadcrumb-item active whiteText">About</li>
           </ol>
           <h2>About Us</h2>
           <hr />
@@ -110,27 +122,27 @@
         </div>
 
         <div class="col-sm-6">
-          <div class="card">
+          <div class="card card-about" >
             <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
             <div class="card-body">
               <dl class="row">
-                <dt class="col-6">Founded</dt>
-                <dd class="col-6">February 3, 2016</dd>
-                <dt class="col-6">No. of Campsites in 2019</dt>
-                <dd class="col-6">563</dd>
-                <dt class="col-6">No. of Reviews in 2019</dt>
-                <dd class="col-6">4388</dd>
-                <dt class="col-6">Employees</dt>
-                <dd class="col-6">42</dd>
+                <dt class="col-6 whiteText">Founded</dt>
+                <dd class="col-6 whiteText">February 3, 2016</dd>
+                <dt class="col-6 whiteText">No. of Campsites in 2019</dt>
+                <dd class="col-6 whiteText">563</dd>
+                <dt class="col-6 whiteText">No. of Reviews in 2019</dt>
+                <dd class="col-6 whiteText">4388</dd>
+                <dt class="col-6 whiteText">Employees</dt>
+                <dd class="col-6 whiteText">42</dd>
               </dl>
             </div>
           </div>
         </div>
 
         <div class="col">
-          <div class="card bg-light mt-3">
-            <blockquote class="blockquote card-body">
-              <p class="mb-0">
+          <div class="card card-block mt-3 " >
+            <blockquote class="blockquote card-body card-block">
+              <p class="mb-0 whiteText">
                 I will not follow where the path may lead, but I will go where
                 there is no path, and I will leave a trail.
               </p>
@@ -149,10 +161,10 @@
         <div class="col">
           <h3>Community Partners</h3>
           <div id="accordion">
-            <div class="card">
-              <div role="tab" class="card-header">
+            <div class="card card-block">
+              <div role="tab" class="card-header card-block">
                 <h4>
-                  <a data-toggle="collapse" data-target="#bootstrap">
+                  <a class='whiteText card-block'data-toggle="collapse" data-target="#bootstrap">
                     Bootstrap Outfitters <small>Outdoor Gear Specialists</small>
                   </a>
                 </h4>
@@ -162,7 +174,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p class="d-none d-sm-block">
+                    <p class="d-none d-sm-block whiteText card-block">
                       Bootstrap Outfitters supplies you with the gear you need
                       at prices you can't beat.
                     </p>
@@ -171,10 +183,10 @@
               </div>
             </div>
             <div class="card">
-              <div role="tab" class="card-header">
+              <div role="tab" class="card-header card-block">
                 <h4>
                   <a
-                    class="collapsed"
+                    class="collapsed whiteText card-block"
                     data-toggle="collapse"
                     data-target="#git"
                   >
@@ -183,8 +195,8 @@
                   </a>
                 </h4>
                 <div class="collapse" id="git" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="d-none d-sm-block">
+                  <div class="card-body card-block">
+                    <p class="d-none d-sm-block whiteText">
                       Join Git Out Expeditions to explore new horizons with a
                       group of other adventurers!
                     </p>
@@ -193,10 +205,10 @@
               </div>
             </div>
             <div class="card">
-              <div role="tab" class="card-header">
+              <div role="tab" class="card-header card-block">
                 <h4>
                   <a
-                    class="collapsed"
+                    class="collapsed whiteText card-block"
                     data-toggle="collapse"
                     data-target="#mongo"
                   >
@@ -205,8 +217,8 @@
                   </a>
                 </h4>
                 <div class="collapse" id="mongo" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="d-none d-sm-block">
+                  <div class="card-body card-block">
+                    <p class="d-none d-sm-block whiteText">
                       Need a new fishing pole, a tacklebox, or flies of all
                       kinds? Stop by Mongo Fly Shop.
                     </p>
@@ -215,10 +227,10 @@
               </div>
             </div>
             <div class="card">
-              <div role="tab" class="card-header">
+              <div role="tab" class="card-header card-block">
                 <h4>
                   <a
-                    class="collapsed"
+                    class="collapsed whiteText card-block"
                     data-toggle="collapse"
                     data-target="#node"
                   >
@@ -226,8 +238,8 @@
                   </a>
                 </h4>
                 <div class="collapse" id="node" data-parent="#accordion">
-                  <div class="card-body">
-                    <p class="d-none d-sm-block">
+                  <div class="card-body card-block">
+                    <p class="d-none d-sm-block whiteText">
                       From polar fleeces to swimsuits, hiking boots to waders, a
                       visit to Node will be sure to get you covered.
                     </p>
@@ -239,7 +251,7 @@
         </div>
       </div>
 
-      <div class="row row-content">
+      <div class="row mb-4">
         <div class="col-sm-9">
           <h2>Facts &amp; Figures</h2>
           <div class="table-responsive">
@@ -282,7 +294,7 @@
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-2 offset-1">
-            <h5>Links</h5>
+            <h5 class='whiteText'>Links</h5>
             <ul class="list-unstyled">
               <li><a href="/">Home</a></li>
               <li>
@@ -293,7 +305,7 @@
             </ul>
           </div>
           <div class="col-6 col-sm-5 text-center">
-            <h5>Social</h5>
+            <h5 class='whiteText'>Social</h5>
             <a
               class="btn btn-social-icon btn-instagram"
               href="http://instagram.com/"
@@ -327,9 +339,11 @@
         </div>
       </div>
     </footer>
-
+   
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./node_modules/dark-mode-switch/dark-mode-switch.min.js"></script>
   </body>
 </html>

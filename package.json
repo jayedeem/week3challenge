@@ -2,7 +2,7 @@
   "name": "2-Bootstrap",
   "version": "1.0.0",
   "description": "This is a website for the fictional campsites review site NuCamp.",
-  "main": "newIndex.html",
+  "main": "app.js",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
@@ -12,7 +12,9 @@
   "author": "Andrew Cacayuran",
   "license": "MIT",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",

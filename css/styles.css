@@ -1,5 +1,11 @@
+:root{
+  --purple-color: #cec8ff;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #bab8d8;
 }
 
 h1,
@@ -54,4 +60,12 @@ footer {
 [data-theme='dark'] {
   background-color: #111 !important;
   color: #eee;
+}
+
+.card-about{
+  background-color: var(--purple-color)
+}
+
+.card-block{
+  background-color: var(--purple-color)
 }
