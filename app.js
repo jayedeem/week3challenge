@@ -5,11 +5,11 @@ $(function () {
 
 const textElement = document.getElementsByClassName("whiteText");
 const navElement = document.getElementsByClassName("navbar");
-const gradient = "linear-gradient(to right, #5637dd, #3046c5, #60106b)";
+const gradientChange = "linear-gradient(to right, #5637dd, #3046c5, #60106b)";
 const dark = document.getElementById("darkSwitch");
 const storage = localStorage.getItem("darkSwitch");
 
-dark.addEventListener('change', changedMe(textElement, navElement, gradient))
+inDarkMode(storage, textElement,navElement,gradientChange)
 
 function changedMe(text, navBar, grad){
   return {
@@ -19,6 +19,14 @@ function changedMe(text, navBar, grad){
   }
 }
 
+
+function inDarkMode(storage, text, nav, gradient){
+  if(!storage === 'dark') {
+    dark.addEventListener('change', changedMe(text, nav, gradient))
+  } else {
+    changedMe(text, nav, gradient)
+  }
+}
 
 
 
