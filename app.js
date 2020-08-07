@@ -3,38 +3,23 @@ $(function () {
   $(`[data-toggle='tooltip']`).tooltip();
 });
 
+const textElement = document.getElementsByClassName("whiteText");
+const navElement = document.getElementsByClassName("navbar");
+const gradient = "linear-gradient(to right, #5637dd, #3046c5, #60106b)";
+const dark = document.getElementById("darkSwitch");
+const storage = localStorage.getItem("darkSwitch");
 
-const text = document.getElementsByClassName('whiteText');
-const navBar = document.getElementsByClassName('navbar')
-const gradient = 'linear-gradient(to right, #5637dd, #3046c5, #60106b)'
+dark.addEventListener('change', changedMe(textElement, navElement, gradient))
 
-const storage = localStorage.getItem("darkSwitch")
+function changedMe(text, navBar, grad){
+  return {
+    first: Array.from(navBar).forEach(el => el.style.background = grad),
+    second: Array.from(text).forEach(el => el.style.color = 'black')
 
-const darkMode = () => document
-  .getElementById('darkSwitch')
-  .addEventListener('change', () => {
-    const text = document.getElementsByClassName('whiteText');
-    const navBar = document.querySelector('.navbar')
-    
-    return {
-      first: navBar.style.background = gradient,
-      second: Array.from(text).forEach((el) => (el.style.color = 'black'))
-    }
-  });
-
-
-function isDark(){
-  if(storage === 'dark') {
-    const text = document.getElementsByClassName('whiteText');
-      const navBar = document.querySelector('.navbar')
-      
-      return {
-        first: navBar.style.background = gradient,
-        second: Array.from(text).forEach((el) => (el.style.color = 'black'))
-      }
-  } else {
-    darkMode()
   }
 }
 
-isDark()
+
+
+
+
